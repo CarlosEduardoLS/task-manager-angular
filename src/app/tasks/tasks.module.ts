@@ -4,9 +4,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListTaskComponent } from './list';
 import { FormsModule } from '@angular/forms';
+import { RegisterTaskComponent } from './register';
 
 @NgModule({
-  declarations: [ListTaskComponent],
+  declarations: [ListTaskComponent, RegisterTaskComponent],
   imports: [CommonModule, RouterModule, FormsModule],
   providers: [TaskService],
 })
