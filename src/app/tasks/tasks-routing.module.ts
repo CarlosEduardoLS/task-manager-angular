@@ -1,3 +1,4 @@
+import { RegisterTaskComponent } from './register/register-task.component';
 import { ListTaskComponent } from './list/list-task.component';
 import { Routes } from '@angular/router';
 
@@ -9,5 +10,9 @@ export const TaskRoutes: Routes = [
   {
     path: 'tasks/list',
     component: ListTaskComponent,
+  },
+  {
+    path: 'tasks/register',
+    component: RegisterTaskComponent,
   },
 ];
