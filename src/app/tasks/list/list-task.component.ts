@@ -13,7 +13,7 @@ export class ListTaskComponent implements OnInit {
 
   ngOnInit(): void {
     this.tasks = this.getTasks();
-    this.tasks = [new Task(1, 'Task 1', false), new Task(2, 'Task 2', true)];
+    this.tasks = [];
   }
 
   getTasks(): Task[] {
