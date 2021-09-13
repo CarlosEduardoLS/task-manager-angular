@@ -18,4 +18,12 @@ export class ListTaskComponent implements OnInit {
   getTasks(): Task[] {
     return this.taskService.getTasks();
   }
+
+  delete($event: any, task: Task): void {
+    $event.preventDefault();
+    if (confirm('Deseja remover a tarefa "' + task.name + '"?')) {
+      this.taskService.delete(task.id);
+      this.tasks = this.taskService.getTasks();
+    }
+  }
 }
