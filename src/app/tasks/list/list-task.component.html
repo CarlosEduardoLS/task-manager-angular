@@ -12,7 +12,9 @@
       </th>
     </tr>
     <tr *ngFor="let task of tasks">
-      <td [class.info]="!task.completed">{{ task.name }}</td>
+      <td [taskCompleted]="task.completed" [class.info]="!task.completed">
+        {{ task.name }}
+      </td>
       <td style="width: 70px" class="text-center">
         <input
           (click)="changeStatus(task)"
